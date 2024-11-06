@@ -1,0 +1,14 @@
+{
+  "name": "sequelize-training",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Frize",
+  "license": "ISC",
+  "description": "Entrainement pour sequelize",
+  "dependencies": {
+    "sequelize": "^6.37.5"
+  }
+}
