@@ -7,12 +7,10 @@ const sequelize = new Sequelize({
     storage: 'database.sqlite'
   });
 
-sequelize.authenticate().then(() => {
-    console.log('Connexion réussie !');
-}).catch((err) => {
-    console.log('Erreur de connexion à la base de données !');
-});
+async function loginToBDD(){
+    await sequelize.authenticate();
+    console.log('Connction successful');
+}
 
-// Actuellement cette ligne apparaît avant dans la console
-// J'imagine que la fonction authenticate() est async
+loginToBDD();
 console.log('Étape suivante ?');
