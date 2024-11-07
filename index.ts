@@ -1,6 +1,7 @@
 // Apple des dépendances dans le projet
 const Sequelize = require("sequelize");
 const sqlite = require("sqlite3");
+const { DataTypes } = Sequelize;
 
 const sequelize = new Sequelize({
     dialect: "sqlite",
@@ -11,17 +12,17 @@ const User = sequelize.define(
     "user",
     {
         username: {
-            type: Sequelize.DataTypes.STRING(96),
+            type: DataTypes.STRING(96),
             allowNull: false,
             defaultValue: "Titouan",
         },
         email: {
-            type: Sequelize.DataTypes.STRING,
+            type: DataTypes.STRING,
             unique: true,
             allowNull: false,
         },
         password: {
-            type: Sequelize.DataTypes.STRING,
+            type: DataTypes.STRING,
             allowNull: false,
         },
     },
