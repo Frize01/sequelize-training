@@ -1,15 +1,14 @@
 {
   "name": "projet-entrainement",
   "version": "1.0.0",
-  "description": "Ce projet est un projet fictif qui me permettra d'apprendre à utiliser Sequelize. Le but de ce projet est de m'entraîner à réussir à faire une API avec NodeJS. Je vais par la suite ajouter d'autres briques au projet pour apprendre à utiliser en plus ExpressJS ainsi que réussir à faire une application avec VueJS ainsi que réussir à faire un monorepo. A terme j'aimerais aussi pouvoir tout éxécuter avec Docker.",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "description": "",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
